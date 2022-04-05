@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-*node_modules
-*config.env
-=======
 # Logs
 logs
 *.log
@@ -75,7 +71,7 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
-
+config.env
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
@@ -106,4 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
->>>>>>> 721070638702c9cd0dfa51672492c6ff5e19cc69
