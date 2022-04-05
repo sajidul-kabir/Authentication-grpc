@@ -1,0 +1,39 @@
+
+syntax = "proto3";
+
+
+package authPackage;
+
+// The greeting service definition.
+service Auth {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc register (RegistrationInfo) returns (RegistrationReply){}
+  rpc login (loginInfo) returns (loginReply){}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}
+message RegistrationInfo{
+    string userName =1;
+    string password=2;
+    string email=3;
+    string occupation=4;
+}
+message RegistrationReply{
+    string message=1;
+}
+message loginInfo{
+  string userName=1;
+  string password=2;
+}
+message loginReply{
+  string message=1;
+}
